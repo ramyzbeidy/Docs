@@ -55,7 +55,7 @@ public interface IFormFile
     string FileName { get; }
     Stream OpenReadStream();
     void CopyTo(Stream target);
-    Task CopyToAsync(Stream target, CancellationToken cancellationToken = null);
+    Task CopyToAsync(Stream target, CancellationToken? cancellationToken = null);
 }
 ```
 
